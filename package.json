@@ -6,18 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate:pg ",
+    "db:up": "drizzle-kit up:pg"
   },
   "dependencies": {
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
+    "drizzle-orm": "^0.27.0",
     "next": "13.4.7",
+    "pg": "^8.11.1",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.2",
+    "drizzle-kit": "^0.19.3"
   }
 }
