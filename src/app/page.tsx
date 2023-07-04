@@ -1,13 +1,10 @@
-"use client";
 import { db } from "@/db";
-import { countries } from "@/db/schema";
-import Image from "next/image";
+import { cities, countries } from "@/db/schema";
 
-export default function Home() {
-  const countries = 1;
+export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {JSON.stringify(countries)}
+      <h1>Hello world</h1>
     </main>
   );
 }
